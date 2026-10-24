@@ -2,9 +2,9 @@ data "terraform_remote_state" "vpc" {
   backend = "remote"
 
   config = {
-    organization = "vpc-peering"
+    organization = "vpc-vcs-org"
     workspaces = {
-      name = "fe-network-ws"
+      name = "vcs-fe-network-ws"
     }
   }
 }
